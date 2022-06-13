@@ -1,0 +1,16 @@
+{
+  "name": "femboy-discord-boyt",
+  "version": "1.0.0",
+  "description": "femboy discord bot",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test sepcified\" && exit 1"
+  },
+  "author": {
+    "name": "tap1oca"
+  },
+  "dependencies": {
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1"
+  }
+}
