@@ -15,7 +15,9 @@ client.on("ready", () => {
 });
 
 client.on("messageCreate", (message) => {
-    
+    if (message.content == "!cock") {
+        message.reply("cock!");
+    }
 })
 
 client.login(process.env.TOKEN);
