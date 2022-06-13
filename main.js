@@ -16,8 +16,13 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
-        message.send(`I love huge penis!`);
+        message.send(`<@${member.id}> I love huge penis`);
     }
 })
+
+const welcomeChannelId = "985128570592591952";
+client.on("guildMemberAdd", (member) => {
+    member.guild.channels.channelCountWithoutThreads.get(welcomeChannelId).send(`<@${member.id}> Hello`)
+});
 
 client.login(process.env.TOKEN);
