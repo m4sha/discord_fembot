@@ -17,6 +17,7 @@ client.on("ready", () => {
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
         message.reply("I love penis! ^~^")
+        console.log("i love penis trollfac")
     }
 })
 
