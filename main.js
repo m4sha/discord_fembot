@@ -16,7 +16,7 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
-        message.reply("cock!");
+        message.send(`<@${member.id}> I love huge penis!`);
     }
 })
 
