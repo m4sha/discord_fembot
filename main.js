@@ -27,10 +27,10 @@ client.on("messageCreate", (message) => {
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content.toLowerCase() == "!cock") {
+    if (message.content == "!cock") {
         cockamount -= 1;
     }
-    if (message.content.toLowerCase().includes("cock")) {
+    if (message.content.includes("cock")) {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
     }
