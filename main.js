@@ -26,12 +26,13 @@ client.on("messageCreate", (message) => {
         else {
             message.reply("Cock has been said 1 time :3");
         }
+        cockamount -= 1;
         console.log("ran command !cock");
     }
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content.toLowerCase() == "cock") {
+    if (message.content.toLowerCase().includes("cock")) {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
     }
