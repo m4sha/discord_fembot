@@ -15,7 +15,7 @@ const client = new Discord.Client({
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
-    cockamount = 0;
+    cockamount = 1;
 });
 
 client.on("messageCreate", (message) => {
@@ -28,7 +28,7 @@ client.on("messageCreate", (message) => {
 
 client.on("messageCreate", (message) => {
     if (message.content.toLowerCase() == "!cock") {
-        cockamount -= 2;
+        cockamount -= 1;
     }
     if (message.content.toLowerCase().includes("cock")) {
         cockamount += 1;
