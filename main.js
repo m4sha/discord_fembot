@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 require("dotenv").config();
 
+var cockamount = 0;
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 };
@@ -18,20 +20,20 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
-        message.reply("I love penis! ^~^");
-        console.log("i love penis trollfac");
+        if (cockamount > 1) {
+            message.reply("Cock has been said " + cockamount + " times :3");
+        }
+        else {
+            message.reply("Cock has been said 1 time :3");
+        }
+        console.log("ran command !cock");
     }
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content == "hi fembot") {
-        message.reply("Hello!! :3");
-    }
-});
-
-client.on("messageCreate", (message) => {
-    if (message.content == "fuck you fembot") {
-        message.reply("you should kill yoursel");
+    if (message.content.toLowerCase() == "cock") {
+        cockamount += 1;
+        console.log("cock was said, cockamount = " + cockamount);
     }
 });
 
