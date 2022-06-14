@@ -23,7 +23,7 @@ client.on("messageCreate", (message) => {
         if (cockamount > 1) {
             message.reply("Cock has been said " + cockamount + " times :3");
         }
-        else {
+        if (cockamount <= 1) {
             message.reply("Cock has been said 1 time :3");
         }
         cockamount -= 1;
