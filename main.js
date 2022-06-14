@@ -21,15 +21,12 @@ client.on("ready", () => {
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
         message.reply("Cock has been said " + cockamount + " times :3");
-        cockamount -= 1;
         console.log("ran command !cock with cockamount = " + cockamount);
+        cockamount -= 1;
     }
 });
 
 client.on("messageCreate", (message) => {
-    if (message.content == "!cock") {
-        cockamount -= 1;
-    }
     if (message.content.includes("cock")) {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
