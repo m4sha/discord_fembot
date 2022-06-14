@@ -15,21 +15,29 @@ const client = new Discord.Client({
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
-    cockamount = 1;
+    cockamount = 0;
+    meowamount = 0;
 });
 
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
-        message.reply("Cock has been said " + cockamount + " times :3");
+        message.reply("Cock counter: " + cockamount);
         console.log("ran command !cock with cockamount = " + cockamount);
         cockamount -= 1;
     }
-});
-
-client.on("messageCreate", (message) => {
     if (message.content.includes("cock")) {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
+    }
+
+    if (message.content == "!meow") {
+        message.reply("Meow counter: " + meowamount);
+        console.log("ran command !meow with meowamount = " + meowamount);
+        meowamount -= 1;
+    }
+    if (message.content.toLowerCase().includes("meow")) {
+        meowamount += 1;
+        console.log("Meow was said, meow amount = " + meowamount);
     }
 });
 
