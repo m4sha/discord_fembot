@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 require("dotenv").config();
-
-var cockamount = 0;
+var cockamount;
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -16,6 +15,7 @@ const client = new Discord.Client({
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.tag}`);
+    cockamount = 0;
 });
 
 client.on("messageCreate", (message) => {
@@ -32,6 +32,7 @@ client.on("messageCreate", (message) => {
 });
 
 client.on("messageCreate", (message) => {
+
     if (message.content.toLowerCase().includes("cock") && message.content.toLowerCase() != "!cock") {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
