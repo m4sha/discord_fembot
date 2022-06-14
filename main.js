@@ -20,20 +20,17 @@ client.on("ready", () => {
 
 client.on("messageCreate", (message) => {
     if (message.content == "!cock") {
-        if (cockamount > 1) {
-            message.reply("Cock has been said " + cockamount + " times :3");
-        }
-        if (cockamount <= 1) {
-            message.reply("Cock has been said 1 time :3");
-        }
+        message.reply("Cock has been said " + cockamount + " times :3");
         cockamount -= 1;
-        console.log("ran command !cock");
+        console.log("ran command !cock with cockamount = " + cockamount);
     }
 });
 
 client.on("messageCreate", (message) => {
-
-    if (message.content.toLowerCase().includes("cock") && message.content.toLowerCase() != "!cock") {
+    if (message.content.toLowerCase() == "!cock") {
+        cockamount -= 2;
+    }
+    if (message.content.toLowerCase().includes("cock")) {
         cockamount += 1;
         console.log("cock was said, cockamount = " + cockamount);
     }
