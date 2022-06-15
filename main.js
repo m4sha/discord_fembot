@@ -45,7 +45,7 @@ client.on("messageCreate", (message) => {
 
             // !uwu command
     if (message.content == "!uwu") {
-        var uwuran = getRandomInt(4).toString();
+        var uwuran = getRandomInt(45).toString();
         if (uwuran == 0) {
             message.reply("femboys awe the futuwe of ouw genyewation uwu, they awe cute, giwwy and wuvs putting things up theiw wittwe swutty boipussy, they awe the pewfect giwwfwiends owo and they wiww wuv you fowevew and evew so they nyuzzwes with you O//W//O wooks at daddy c-can I be youw sexy femboy so you can use me as a c-cummies wag pweaseeeee?");
         }
@@ -57,6 +57,9 @@ client.on("messageCreate", (message) => {
         }
         if (uwuran == 3) {
             message.reply("Rawr X3 *nuzzles* How are you? *pounces on you* you're so warm o3o *notices you have a bulge* someone's happy! *nuzzles your necky wecky* ~murr~ hehe ;) *rubbies your bulgy wolgy* you're so big! *rubbies more on your bulgy wolgy* it doesn't stop growing .///. *kisses you and licks your neck* daddy likes ;) *nuzzle wuzzle* I hope daddy likes *wiggles butt and squirms* I wanna see your big daddy meat! *wiggles butt* I have a little itch o3o *wags tails* can you please get my itch? *put paws on your chest* nyea~ it's a seven inch itch *rubs your chest* can you pwease? *squirms* pwetty pwease? :( I need to be punished *runs paws down your chest and bites lip* like, I need to be punished really good *paws on your bulge as I lick my lips* I'm getting thirsty. I could go for some milk *unbuttons your pants as my eyes glow* you smell so musky ;) *licks shaft* mmmmmmmmmmmmmmmmmmm so musky ;) *drools all over your cawk* your daddy meat. I like. Mister fuzzy balls. *puts snout on balls and inhales deeply* oh my gawd. I'm so hard *rubbies your bulgy wolgy* *licks balls* punish me daddy nyea~ *squirms more and wiggles butt* I9/11 lovewas an yourinside muskyjob goodness *bites lip* please punish me *licks lips* nyea~ *suckles on your tip* so good *licks pre off your cock* salty goodness~ *eyes roll back and goes balls deep*");
+        }
+        if (uwuran == 4) {
+            message.reply("Great. I fucking cummed. Because of what you posted. Do you think it's cool to make me cum in front of my family? Do you get joy out of it? My cum filled my underwear and is dripping down my leg. All because of you. I'm at my wife's funeral right now and I cummed all over her coffin. My great grandpa looked at this post and cummed so hard he died! Now I have to got to two funerals, all because of you. My great grandma slapped me in the face, which made me cum even more! I'm sitting in a pool of my own cum with two dead people in this room, just because you had to post this.")
         }
     }
 });
