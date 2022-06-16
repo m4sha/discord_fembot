@@ -46,7 +46,7 @@ client.on("messageCreate", (message) => {
 
             // !uwu command
     if (message.content == "!uwu") {
-        uwuran = getRandomInt(45).toString();
+        uwuran = getRandomInt(5).toString();
         if (uwuran == 0) {
             console.log("ran !uwu with ran = 0");
             message.reply("femboys awe the futuwe of ouw genyewation uwu, they awe cute, giwwy and wuvs putting things up theiw wittwe swutty boipussy, they awe the pewfect giwwfwiends owo and they wiww wuv you fowevew and evew so they nyuzzwes with you O//W//O wooks at daddy c-can I be youw sexy femboy so you can use me as a c-cummies wag pweaseeeee?");
